@@ -513,6 +513,7 @@ export default class Drawer extends React.PureComponent<Props> {
         { right: 0, width: open ? undefined : swipeEdgeWidth }
       : { left: 0, width: open ? undefined : swipeEdgeWidth };
 
+    // @ts-ignore
     return (
       <DrawerProgressContext.Provider value={this.progress}>
         <PanGestureHandler
@@ -547,6 +548,7 @@ export default class Drawer extends React.PureComponent<Props> {
                 <Animated.View
                   style={[
                     styles.overlay,
+                    // @ts-ignore
                     {
                       opacity: interpolateNode(this.progress, {
                         inputRange: [PROGRESS_EPSILON, 1],
