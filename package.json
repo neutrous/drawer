@@ -19,9 +19,6 @@
     "prepare": "bob build",
     "release": "release-it"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "keywords": [
     "react-native-component",
     "react-component",
@@ -31,10 +28,6 @@
     "drawer",
     "material"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/react-navigation/drawer.git"
-  },
   "author": "",
   "license": "MIT",
   "bugs": {
@@ -78,7 +71,7 @@
     "react": "*",
     "react-native": "*",
     "react-native-gesture-handler": "^1.0.12",
-    "react-native-reanimated": "^1.0.0",
+    "react-native-reanimated": "^2.0.0",
     "react-native-screens": "^1.0.0 || ^1.0.0-alpha",
     "react-navigation": "^4.0.7"
   },
@@ -104,12 +97,6 @@
     "testEnvironment": "node",
     "transform": {
       "^.+\\.(js|ts|tsx)$": "babel-jest"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint && yarn typescript && yarn test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "@react-native-community/bob": {
